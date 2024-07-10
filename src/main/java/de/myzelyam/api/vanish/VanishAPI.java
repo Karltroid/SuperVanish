@@ -69,9 +69,9 @@ public class VanishAPI {
      *
      * @param p - the player.
      */
-    public static void hidePlayer(Player p) {
+    public static void hidePlayer(Player p, String name, boolean silent) {
         Validation.checkNotNull("Player cannot be null!", p);
-        PLUGIN.getVisibilityChanger().hidePlayer(p);
+        PLUGIN.getVisibilityChanger().hidePlayer(p, name, silent);
     }
 
     /**
